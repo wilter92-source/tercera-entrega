@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Fuente -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+  </style>
+
+  <title>About-me</title>
+</head>
+
+<body>
+
+
+  <!--Inicio header  -->
+
+  <header>
+    <nav class="navbar navbar-expand-lg w-100">
+      <div class="container">
+
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/logo.png" alt="Logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="about-me.html">About me</a></li>
+            <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Fin Header -->
+
+
+  <!-- Inicio main -->
+
+  <main class="about-container container">
+    <div class="about-content">
+
+      <!-- About me -->
+
+      <div class="about-img">
+        <img src="../img/about-me/retrato.png" alt="retrato-baldomero">
+      </div>
+
+      <div class="about-text">
+        <h1>About me</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, unde a. Dignissimos rerum temporibus fuga
+          dicta voluptates autem? Impedit est doloremque expedita eius eveniet quod rem veniam et cumque sed.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, unde a. Dignissimos rerum temporibus fuga
+          dicta voluptates autem? Impedit est doloremque expedita eius eveniet quod rem veniam et cumque sed.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Lista de experiencia relevante -->
+    <section class="about-experience">
+      <h3>Experiencia Relevante</h3> <br>
+      <ul>
+        <li>
+          <h4>Experiencia 01</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatum architecto ut saepe voluptatem
+            sit!
+
+
+            <span class="exp-years">2021 - 2025</span>
+          </p>
+        </li><br>
+        <li>
+          <h4>Experiencia 02</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatum architecto ut saepe voluptatem
+            sit!
+            <span class="exp-years">2019 - 2021</span>
+          </p>
+        </li><br>
+        <li>
+          
+          <h4>Experiencia 03</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatum architecto ut saepe voluptatem
+            sit!
+            <span class="exp-years">2017 - 2019</span>
+          </p>
+        </li>
+      </ul> <br>
+
+      <a class="btn-cta btn-cv" href="#">Descargar CV</a>
+
+    </section>
+
+  </main>
+
+
+  <!-- FIN main -->
+
+  <!-- Inicio Servicios  -->
+  <div>
+
+    <section class="servicios">
+      <div class="container">
+        <h3>Servicios</h3>
+
+        <div class="accordion" id="serviciosAccordion">
+
+          <!-- Servicio 01 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#serv1">
+                Servicio 01
+              </button>
+            </h2>
+            <div id="serv1" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
+              <div class="accordion-body">
+                Descripción del Servicio 01.
+              </div>
+            </div>
+          </div>
+
+          <!-- Servicio 02 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#serv2">
+                Servicio 02
+              </button>
+            </h2>
+            <div id="serv2" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
+              <div class="accordion-body">
+                Descripción del Servicio 02.
+              </div>
+            </div>
+          </div>
+
+          <!-- Servicio 03 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#serv3">
+                Servicio 03
+              </button>
+            </h2>
+            <div id="serv3" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
+              <div class="accordion-body">
+                Descripción del Servicio 03.
+              </div>
+            </div>
+          </div>
+
+          <!-- Servicio 04 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#serv4">
+                Servicio 04
+              </button>
+            </h2>
+            <div id="serv4" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
+              <div class="accordion-body">
+                Descripción del Servicio 04.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Fin Servicios -->
+
+  <!-- CTA -->
+  <section class="CTA">
+    <div class="container">
+      <h2 class="black">Trabajemos juntos</h2>
+      <a href="#" class="btn-cta">Clic aquí</a>
+    </div>
+  </section>
+
+
+  <!-- Footer  -->
+  <footer>
+    <div class="container">
+      <a href="#"><img src="../img/footer/behance.png" alt="Behance"></a>
+      <a href="#"><img src="../img/footer/instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="../img/footer/github.png" alt="Github"></a>
+      <a href="#"><img src="../img/footer/dribble.png" alt="Dribble"></a>
+    </div>
+  </footer>
+
+
+  <!-- script bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

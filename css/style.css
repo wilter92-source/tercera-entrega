@@ -1,0 +1,442 @@
+/* Mobile fist*/
+
+/* reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000;
+  color: #FFF;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+
+/*main */
+
+.container {
+  width: 90%;
+  max-width: 68.75rem;
+  margin: 0 auto;
+}
+
+main {
+  padding: 2rem 0;
+}
+
+.bienvenida {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+
+/*Header */
+
+header {
+  background-color: #B8FF34;
+
+}
+
+/*Ajustes Bootstrap Navbar */
+.navbar-nav {
+  gap: 1.5rem;
+}
+
+
+.navbar-brand img {
+  height: 3rem;
+  width: auto;
+}
+
+
+
+.navbar-collapse {
+  padding: 1rem;
+  background-color: #B8FF34;
+
+}
+
+.navbar-nav .nav-link {
+  padding: 0.6rem 2rem;
+  border-radius: 0.4rem;
+  color: #000;
+  font-weight: 700;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #000;
+  color: #B8FF34;
+}
+
+.navbar-toggler {
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+
+/* Proyectos */
+
+.proyectos h3 {
+  margin-bottom: 1.5rem;
+}
+
+.proyecto-card h4 {
+  color: #B8FF34;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.proyecto-card h4 a {
+  color: #B8FF34;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.proyecto-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenido {
+  padding: 0.75rem 0;
+}
+
+/* Ocultos en mobile */
+
+.proyecto-02,
+.proyecto-04,
+.proyecto-06,
+.proyecto-08 {
+  display: none;
+}
+
+
+/* Servicios */
+
+.servicios {
+  padding: 2rem 0;
+}
+
+.servicios h3 {
+  margin-bottom: 1.5rem;
+}
+
+/* Ajustes Bootstrap Accordion */
+
+.accordion-item {
+  background-color: inherit;
+  border: none;
+  border-radius: 0;
+}
+
+.accordion-button {
+  background-color: inherit;
+  color: #B8FF34;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-collapse {
+  border-radius: 0 !important;
+}
+
+
+
+/* Icono personalizado de Accordion*/
+.accordion-button::after {
+  background-image: none !important;
+  content: "+";
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #B8FF34;
+}
+
+.accordion-button:not(.collapsed)::after {
+  content: "−";
+  color: #000;
+}
+
+/* Estado abierto */
+.accordion-button:not(.collapsed) {
+  background-color: #B8FF34;
+  color: #000;
+  /* Texto negro como lo teníamos */
+}
+
+/* Contenido abierto */
+.accordion-collapse.show .accordion-body {
+  background-color: #B8FF34;
+  color: #000;
+  /* Texto negro */
+}
+
+.accordion-body {
+  color: #B8FF34;
+}
+
+/* Clientes */
+
+.clientes {
+  padding: 2rem 0;
+}
+
+.clientes h3 {
+  margin-bottom: 1.5rem;
+}
+
+.logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6rem;
+}
+
+/* CTA */
+
+.CTA {
+  background-color: #B8FF34;
+  padding: 2rem 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.CTA h2 {
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.btn-cta {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background-color: #000;
+  color: #FFF;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: #333;
+}
+
+/* Descargar CV */
+.btn-cv {
+  background-color: transparent;
+  color: #B8FF34;
+  border: 1px solid #B8FF34;
+  font-weight: 700;
+}
+
+.btn-cv:hover {
+  background-color: #B8FF34;
+  color: #000;
+}
+
+/* Form proyectos */
+.filtro-proyectos {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+
+/* Footer*/
+
+footer {
+  padding: 1.5rem 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer img {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+}
+
+
+/* About me main */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  /* Mobile */
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-img img {
+  max-width: 350px;
+  border-radius: 0.5rem;
+}
+
+.about-text {
+  text-align: center;
+}
+
+/* About me Experiencia */
+.about-experience h3 {
+  margin-bottom: 1.5rem;
+}
+
+.about-experience {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.about-experience ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.about-experience {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+/* About me años de experiencia */
+.exp-years {
+  display: block;
+  margin: 0.5rem auto 0;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid #B8FF34;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #B8FF34;
+  width: fit-content;
+}
+
+
+.about-text h1 {
+  color: #B8FF34;
+}
+
+/* Proyectos Botón ver Más */
+.proyectos+.btn-cta {
+  display: block;
+  width: fit-content;
+  margin: 3rem auto 0;
+}
+
+
+
+
+/* Desktop*/
+
+@media (min-width: 768px) {
+
+
+  /* Desktop Navbar bootstrap */
+  .navbar-collapse {
+    background-color: transparent;
+    padding: 0;
+    background-color: transparent;
+
+  }
+
+  .navbar-nav .nav-link {
+    color: #000;
+  }
+
+
+  /* Desktop Proyectos */
+  .proyectos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .proyecto-02,
+  .proyecto-04,
+  .proyecto-06,
+  .proyecto-07,
+  .proyecto-08 {
+    display: flex;
+  }
+
+
+  /* Disposicion logos */
+  .logos {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+
+  /*Desktop About me  */
+  .about-content {
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+
+  }
+
+  .about-img {
+    flex: 0 0 380px;
+  }
+
+  .about-text {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+  }
+
+  .about-experience {
+    text-align: left;
+  }
+
+  .about-experience ul {
+    max-width: none;
+    margin: 0;
+  }
+
+
+  .exp-years {
+    display: inline-block;
+    margin-left: 0.75rem;
+  }
+
+
+  /* Desktop Proyectos */
+  .filtro-proyectos {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+
+}
