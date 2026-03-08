@@ -1,0 +1,23 @@
+@use "variables.scss" as *;
+
+@mixin grid($columns, $rows) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+  gap: 1rem;
+}
+
+@mixin imagen($width) {
+  width: $width;
+  object-fit: cover;
+}
+
+@mixin card-styles {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin secondary-font {
+  font-family: $font-complementary;
+  font-style: italic;
+}

@@ -1,0 +1,87 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+@media (min-width: 768px) {
+  .navbar-collapse {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .navbar-nav .nav-link {
+    color: $c-secondary;
+    opacity: 1;
+    text-decoration: none;
+    transition:
+      color 0.3s ease,
+      opacity 0.3s ease,
+      text-decoration-color 0.3s ease;
+
+    &:hover {
+      color: #fff !important;
+      opacity: 0.7;
+    }
+
+    &:active {
+      color: #fff;
+      opacity: 1;
+      text-decoration: underline;
+    }
+  }
+
+  .proyectos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .proyecto-02,
+  .proyecto-04,
+  .proyecto-06,
+  .proyecto-07,
+  .proyecto-08 {
+    display: flex;
+  }
+
+  .logos {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2rem;
+  }
+
+  .about-img {
+    width: 100%;
+    height: 32rem;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      max-width: none;
+      object-fit: cover;
+      object-position: center 30%;
+      display: block;
+    }
+  }
+
+  .about-text {
+    flex: none;
+    max-width: none;
+    text-align: left;
+  }
+
+  .about-experience {
+    text-align: left;
+
+    ul {
+      max-width: none;
+      margin: 0;
+    }
+  }
+
+  .exp-years {
+    display: block;
+    margin: 0.75rem 0 0;
+  }
+}

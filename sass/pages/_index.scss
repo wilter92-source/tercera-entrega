@@ -1,0 +1,30 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+.bienvenida {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+
+  h1 {
+    color: $c-secondary;
+    @include secondary-font;
+  }
+}
+
+.proyectos h2 {
+  margin-bottom: 1.5rem;
+}
+
+.clientes {
+  padding: $padding-principal;
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6rem;
+}

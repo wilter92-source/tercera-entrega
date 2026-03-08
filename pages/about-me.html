@@ -13,26 +13,24 @@
 
   <!-- Fuente -->
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
   </style>
 
   <title>About-me</title>
 </head>
 
 <body>
-
-
-  <!--Inicio header  -->
-
+  <!-- Inicio header -->
   <header>
-    <nav class="navbar navbar-expand-lg w-100">
+    <nav class="navbar navbar-expand-lg w-100" aria-label="Navegación principal">
       <div class="container">
-
         <a class="navbar-brand" href="../index.html">
           <img src="../img/logo.png" alt="Logo">
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="menu" aria-expanded="false" aria-label="Abrir menú de navegación">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -43,155 +41,115 @@
             <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
           </ul>
         </div>
-
       </div>
     </nav>
   </header>
-
-  <!-- Fin Header -->
-
+  <!-- FIN header -->
 
   <!-- Inicio main -->
-
   <main class="about-container container">
-    <div class="about-content">
-
-      <!-- About me -->
-
+    <section class="about-content" aria-labelledby="about-title">
       <div class="about-img">
         <img src="../img/about-me/retrato.png" alt="retrato-baldomero">
       </div>
 
       <div class="about-text">
-        <h1>About me</h1>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, unde a. Dignissimos rerum temporibus fuga
-          dicta voluptates autem? Impedit est doloremque expedita eius eveniet quod rem veniam et cumque sed.
-        </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, unde a. Dignissimos rerum temporibus fuga
-          dicta voluptates autem? Impedit est doloremque expedita eius eveniet quod rem veniam et cumque sed.
-        </p>
+        <h1 id="about-title">Just call me Baldo...</h1>
+        <p>Con 12 años de experiencia en publicidad y una gran pasión por la tecnología, combino creatividad, estrategia e innovación para dar vida a ideas con propósito.</p>
+        <p>Mi experiencia en diseño de marca, UI/UX, diseño de producto, copywriting y desarrollo full stack me permite crear experiencias completas que unen estética, funcionalidad y visión estratégica.</p>
       </div>
+    </section>
 
-    </div>
-
-    <!-- Lista de experiencia relevante -->
-    <section class="about-experience">
-      <h3>Experiencia Relevante</h3> <br>
+    <section class="about-experience" aria-labelledby="experiencia-relevante">
+      <h2 id="experiencia-relevante">Experiencia Relevante</h2>
       <ul>
         <li>
-          <h4>Experiencia 01</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatum architecto ut saepe voluptatem
-            sit!
-
-
-            <span class="exp-years">2021 - 2025</span>
-          </p>
-        </li><br>
-        <li>
-          <h4>Experiencia 02</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatum architecto ut saepe voluptatem
-            sit!
-            <span class="exp-years">2019 - 2021</span>
-          </p>
-        </li><br>
-        <li>
-          
-          <h4>Experiencia 03</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatum architecto ut saepe voluptatem
-            sit!
-            <span class="exp-years">2017 - 2019</span>
-          </p>
+          <h3>Norlop VML | Art Director</h3>
+          <p>Design and conceptualization of campaigns for brands in the banking, shrimp farming, and mass consumption sectors, among others.</p>
+          <span class="exp-years">May2024 - Al Presente</span>
         </li>
-      </ul> <br>
+        <li>
+          <h3>Inspira Studio | Associate Art Director & Project Manager</h3>
+          <p>Project and teams management, graphic design and animation supervising,involving in storyboard desing and motion graphic process.</p>
+          <span class="exp-years">2019 - 2021</span>
+        </li>
+        <li>
+          <h3>Freelancer</h3>
+          <p>Currently working with clients on projects involving brand design, motion graphics, copywriting, and UI/UX design.</p>
+          <span class="exp-years">2017 - 2019</span>
+        </li>
+      </ul>
 
-      <a class="btn-cta btn-cv" href="#">Descargar CV</a>
-
+      <a class="btn-cta btn-cv" href="../docs/Wilter Zambrano-en.pdf" target="_blank" rel="noopener noreferrer">Descargar CV</a>
     </section>
-
   </main>
-
-
   <!-- FIN main -->
 
-  <!-- Inicio Servicios  -->
-  <div>
+  <!-- Inicio Servicios -->
+  <section class="servicios" aria-labelledby="servicios-about">
+    <div class="container">
+      <h2 id="servicios-about">Servicios</h2>
 
-    <section class="servicios">
-      <div class="container">
-        <h3>Servicios</h3>
-
-        <div class="accordion" id="serviciosAccordion">
-
-          <!-- Servicio 01 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#serv1">
-                Servicio 01
-              </button>
-            </h2>
-            <div id="serv1" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
-              <div class="accordion-body">
-                Descripción del Servicio 01.
-              </div>
+      <div class="accordion" id="serviciosAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serv1"
+              aria-expanded="false" aria-controls="serv1">
+              Branding y Diseño de Marca
+            </button>
+          </h3>
+          <div id="serv1" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
+            <div class="accordion-body">
+              Creo marcas con personalidad, intención y una identidad visual que conecta desde el primer vistazo.
             </div>
           </div>
+        </div>
 
-          <!-- Servicio 02 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#serv2">
-                Servicio 02
-              </button>
-            </h2>
-            <div id="serv2" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
-              <div class="accordion-body">
-                Descripción del Servicio 02.
-              </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serv2"
+              aria-expanded="false" aria-controls="serv2">
+              Copywriting y Contenido Creativo
+            </button>
+          </h3>
+          <div id="serv2" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
+            <div class="accordion-body">
+              Transformo ideas en palabras que atraen, conectan y hacen que cada mensaje tenga impacto.
             </div>
           </div>
+        </div>
 
-          <!-- Servicio 03 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#serv3">
-                Servicio 03
-              </button>
-            </h2>
-            <div id="serv3" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
-              <div class="accordion-body">
-                Descripción del Servicio 03.
-              </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serv3"
+              aria-expanded="false" aria-controls="serv3">
+              UI/UX Design
+            </button>
+          </h3>
+          <div id="serv3" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
+            <div class="accordion-body">
+              Diseño experiencias digitales intuitivas, atractivas y pensadas para que cada interacción fluya naturalmente.
             </div>
           </div>
+        </div>
 
-          <!-- Servicio 04 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#serv4">
-                Servicio 04
-              </button>
-            </h2>
-            <div id="serv4" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
-              <div class="accordion-body">
-                Descripción del Servicio 04.
-              </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serv4"
+              aria-expanded="false" aria-controls="serv4">
+              Full Stack Development
+            </button>
+          </h3>
+          <div id="serv4" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
+            <div class="accordion-body">
+              Construyo soluciones web completas, uniendo diseño, funcionalidad y tecnología en una sola experiencia.
             </div>
           </div>
-
         </div>
       </div>
-    </section>
-  </div>
-
-  <!-- Fin Servicios -->
+    </div>
+  </section>
+  <!-- FIN Servicios -->
 
   <!-- CTA -->
   <section class="CTA">
@@ -201,17 +159,14 @@
     </div>
   </section>
 
-
-  <!-- Footer  -->
+  <!-- Footer -->
   <footer>
     <div class="container">
-      <a href="#"><img src="../img/footer/behance.png" alt="Behance"></a>
-      <a href="#"><img src="../img/footer/instagram.png" alt="Instagram"></a>
-      <a href="#"><img src="../img/footer/github.png" alt="Github"></a>
-      <a href="#"><img src="../img/footer/dribble.png" alt="Dribble"></a>
+      <a href="https://www.behance.net/baldo" target="_blank" rel="noopener noreferrer"><img src="../img/footer/behance.png" alt="Behance"></a>
+      <a href="https://www.instagram.com/baldo.design" target="_blank" rel="noopener noreferrer"><img src="../img/footer/instagram.png" alt="Instagram"></a>
+      <a href="https://github.com/baldo" target="_blank" rel="noopener noreferrer"><img src="../img/footer/github.png" alt="Github"></a>
     </div>
   </footer>
-
 
   <!-- script bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

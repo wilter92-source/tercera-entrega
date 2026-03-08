@@ -1,0 +1,33 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+.proyecto-card {
+  @include card-styles;
+
+  h3 {
+    color: $c-secondary;
+    font-weight: $fw-bold;
+    text-decoration: none;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}
+
+.proyectos-grid {
+  @include grid(1fr, auto);
+  gap: 1rem;
+}
+
+.contenido {
+  padding: 0.75rem 0;
+}
+
+.proyecto-02,
+.proyecto-04,
+.proyecto-06,
+.proyecto-08 {
+  display: none;
+}

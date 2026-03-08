@@ -1,5 +1,4 @@
-/* Mobile fist*/
-
+@charset "UTF-8";
 /* reset */
 * {
   box-sizing: border-box;
@@ -7,212 +6,24 @@
   padding: 0;
 }
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #000;
-  color: #FFF;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-h1 {
-  font-weight: bold;
-}
-
-h3 {
-  font-weight: bold;
-}
-
-
-/*main */
-
-.container {
-  width: 90%;
-  max-width: 68.75rem;
-  margin: 0 auto;
-}
-
-main {
-  padding: 2rem 0;
-}
-
 .bienvenida {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
-
-
-/*Header */
-
-header {
-  background-color: #B8FF34;
-
+.bienvenida h1 {
+  color: #b8ff34;
+  font-family: "Bodoni Moda", serif;
+  font-style: italic;
 }
 
-/*Ajustes Bootstrap Navbar */
-.navbar-nav {
-  gap: 1.5rem;
-}
-
-
-.navbar-brand img {
-  height: 3rem;
-  width: auto;
-}
-
-
-
-.navbar-collapse {
-  padding: 1rem;
-  background-color: #B8FF34;
-
-}
-
-.navbar-nav .nav-link {
-  padding: 0.6rem 2rem;
-  border-radius: 0.4rem;
-  color: #000;
-  font-weight: 700;
-}
-
-.navbar-nav .nav-link:hover {
-  background-color: #000;
-  color: #B8FF34;
-}
-
-.navbar-toggler {
-  border: none;
-  box-shadow: none;
-}
-
-.navbar-toggler:focus {
-  box-shadow: none;
-  outline: none;
-}
-
-
-/* Proyectos */
-
-.proyectos h3 {
+.proyectos h2 {
   margin-bottom: 1.5rem;
 }
-
-.proyecto-card h4 {
-  color: #B8FF34;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.proyecto-card h4 a {
-  color: #B8FF34;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.proyectos-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-}
-
-.proyecto-card {
-  display: flex;
-  flex-direction: column;
-}
-
-.contenido {
-  padding: 0.75rem 0;
-}
-
-/* Ocultos en mobile */
-
-.proyecto-02,
-.proyecto-04,
-.proyecto-06,
-.proyecto-08 {
-  display: none;
-}
-
-
-/* Servicios */
-
-.servicios {
-  padding: 2rem 0;
-}
-
-.servicios h3 {
-  margin-bottom: 1.5rem;
-}
-
-/* Ajustes Bootstrap Accordion */
-
-.accordion-item {
-  background-color: inherit;
-  border: none;
-  border-radius: 0;
-}
-
-.accordion-button {
-  background-color: inherit;
-  color: #B8FF34;
-  border: none;
-  box-shadow: none;
-  border-radius: 0;
-
-}
-
-.accordion-button:focus {
-  box-shadow: none;
-}
-
-.accordion-collapse {
-  border-radius: 0 !important;
-}
-
-
-
-/* Icono personalizado de Accordion*/
-.accordion-button::after {
-  background-image: none !important;
-  content: "+";
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #B8FF34;
-}
-
-.accordion-button:not(.collapsed)::after {
-  content: "−";
-  color: #000;
-}
-
-/* Estado abierto */
-.accordion-button:not(.collapsed) {
-  background-color: #B8FF34;
-  color: #000;
-  /* Texto negro como lo teníamos */
-}
-
-/* Contenido abierto */
-.accordion-collapse.show .accordion-body {
-  background-color: #B8FF34;
-  color: #000;
-  /* Texto negro */
-}
-
-.accordion-body {
-  color: #B8FF34;
-}
-
-/* Clientes */
 
 .clientes {
   padding: 2rem 0;
 }
-
-.clientes h3 {
+.clientes h2 {
   margin-bottom: 1.5rem;
 }
 
@@ -222,81 +33,9 @@ header {
   gap: 6rem;
 }
 
-/* CTA */
-
-.CTA {
-  background-color: #B8FF34;
-  padding: 2rem 0;
-  text-align: center;
-  font-weight: bold;
-}
-
-.CTA h2 {
-  margin-bottom: 1rem;
-  color: #000;
-}
-
-.btn-cta {
-  display: inline-block;
-  padding: 0.5rem 1.5rem;
-  background-color: #000;
-  color: #FFF;
-  text-decoration: none;
-  border-radius: 0.3rem;
-  transition: background-color 0.3s ease;
-}
-
-.btn-cta:hover {
-  background-color: #333;
-}
-
-/* Descargar CV */
-.btn-cv {
-  background-color: transparent;
-  color: #B8FF34;
-  border: 1px solid #B8FF34;
-  font-weight: 700;
-}
-
-.btn-cv:hover {
-  background-color: #B8FF34;
-  color: #000;
-}
-
-/* Form proyectos */
-.filtro-proyectos {
-  margin-bottom: 3rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-
-/* Footer*/
-
-footer {
-  padding: 1.5rem 0;
-}
-
-footer .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-footer img {
-  width: 2.5rem;
-  height: 2.5rem;
-  object-fit: contain;
-}
-
-
-/* About me main */
 .about-content {
   display: flex;
   flex-direction: column;
-  /* Mobile */
   gap: 2rem;
   align-items: center;
 }
@@ -309,80 +48,132 @@ footer img {
 .about-text {
   text-align: center;
 }
-
-/* About me Experiencia */
-.about-experience h3 {
-  margin-bottom: 1.5rem;
+.about-text h1 {
+  color: #b8ff34;
+  font-family: "Bodoni Moda", serif;
+  font-style: italic;
 }
 
 .about-experience {
   margin-top: 4rem;
   text-align: center;
 }
-
+.about-experience h2 {
+  margin-bottom: 1.5rem;
+}
 .about-experience ul {
   list-style: none;
   padding: 0;
   margin: 0 auto;
   max-width: 500px;
 }
-
-.about-experience {
-  margin-top: 4rem;
-  text-align: center;
+.about-experience li + li {
+  margin-top: 2rem;
 }
 
-/* About me años de experiencia */
 .exp-years {
   display: block;
   margin: 0.5rem auto 0;
   padding: 0.25rem 0.75rem;
-  border: 1px solid #B8FF34;
+  border: 1px solid #b8ff34;
   border-radius: 999px;
-  font-weight: 700;
+  width: fit-content;
   font-size: 0.85rem;
-  color: #B8FF34;
-  width: fit-content;
+  font-weight: 700;
+  color: #b8ff34;
 }
 
-
-.about-text h1 {
-  color: #B8FF34;
+.btn-cv {
+  margin-top: 2rem;
+  background-color: transparent;
+  color: #b8ff34 !important;
+  border: 1px solid #b8ff34;
+  font-weight: 700;
+}
+.btn-cv:hover {
+  background-color: #b8ff34 !important;
+  color: #000 !important;
 }
 
-/* Proyectos Botón ver Más */
-.proyectos+.btn-cta {
-  display: block;
-  width: fit-content;
-  margin: 3rem auto 0;
+.proyecto-card {
+  display: flex;
+  flex-direction: column;
+}
+.proyecto-card h3 {
+  color: #b8ff34;
+  font-weight: 700;
+  text-decoration: none;
+}
+.proyecto-card h3 a {
+  color: inherit;
+  text-decoration: none;
 }
 
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 1rem;
+  gap: 1rem;
+}
 
+.contenido {
+  padding: 0.75rem 0;
+}
 
+.proyecto-02,
+.proyecto-04,
+.proyecto-06,
+.proyecto-08 {
+  display: none;
+}
 
-/* Desktop*/
-
-@media (min-width: 768px) {
-
-
-  /* Desktop Navbar bootstrap */
+@media (min-width: 480px) {
   .navbar-collapse {
-    background-color: transparent;
+    padding: 1.25rem;
+  }
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+  .home-img {
+    height: 340px;
+  }
+  .proyectos-grid {
+    gap: 1.5rem;
+  }
+  .accordion-button {
+    font-size: 1rem;
+  }
+  .logos {
+    gap: 3rem;
+  }
+  .about-img {
+    height: 320px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-collapse {
     padding: 0;
     background-color: transparent;
-
   }
-
   .navbar-nav .nav-link {
-    color: #000;
+    color: #b8ff34;
+    opacity: 1;
+    text-decoration: none;
+    transition: color 0.3s ease, opacity 0.3s ease, text-decoration-color 0.3s ease;
   }
-
-
-  /* Desktop Proyectos */
+  .navbar-nav .nav-link:hover {
+    color: #fff !important;
+    opacity: 0.7;
+  }
+  .navbar-nav .nav-link:active {
+    color: #fff;
+    opacity: 1;
+    text-decoration: underline;
+  }
   .proyectos-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .proyecto-02,
   .proyecto-04,
   .proyecto-06,
@@ -390,53 +181,271 @@ footer img {
   .proyecto-08 {
     display: flex;
   }
-
-
-  /* Disposicion logos */
   .logos {
     grid-template-columns: repeat(6, 1fr);
   }
-
-
-  /*Desktop About me  */
   .about-content {
-    flex-direction: row;
-    align-items: center;
-    gap: 4rem;
-
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2rem;
   }
-
   .about-img {
-    flex: 0 0 380px;
+    width: 100%;
+    height: 32rem;
+    overflow: hidden;
   }
-
+  .about-img img {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    object-position: center 30%;
+    display: block;
+  }
   .about-text {
-    flex: 1;
-    max-width: 600px;
+    flex: none;
+    max-width: none;
     text-align: left;
   }
-
   .about-experience {
     text-align: left;
   }
-
   .about-experience ul {
     max-width: none;
     margin: 0;
   }
-
-
   .exp-years {
-    display: inline-block;
-    margin-left: 0.75rem;
+    display: block;
+    margin: 0.75rem 0 0;
   }
-
-
-  /* Desktop Proyectos */
-  .filtro-proyectos {
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-  }
-
 }
+/* Mobile first */
+/* Etiquetas globales */
+body {
+  font-family: "Onest", sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+p,
+ul,
+ol {
+  margin-bottom: 0;
+}
+
+/* Header global */
+header {
+  margin-top: 1rem;
+}
+
+.home-img {
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+}
+.home-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Ajustes Bootstrap Navbar */
+.navbar-nav {
+  gap: 1.5rem;
+}
+
+.navbar-brand img {
+  height: 3rem;
+  width: auto;
+}
+
+.navbar-nav .nav-link {
+  color: #b8ff34;
+  font-weight: 700;
+}
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus, .navbar-nav .nav-link:active {
+  color: #b8ff34;
+}
+
+.navbar-collapse.show .navbar-nav,
+.navbar-collapse.collapsing .navbar-nav {
+  margin-top: 1rem;
+  border-bottom: 1px solid #b8ff34;
+}
+.navbar-collapse.show .nav-item,
+.navbar-collapse.collapsing .nav-item {
+  border-bottom: 1px solid #b8ff34;
+}
+.navbar-collapse.show .nav-item:last-child,
+.navbar-collapse.collapsing .nav-item:last-child {
+  border-bottom: none;
+}
+
+.navbar-toggler {
+  background-color: transparent;
+  border: 1px solid #b8ff34;
+  box-shadow: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  border-color: #b8ff34;
+}
+.navbar-toggler:active {
+  background-color: #b8ff34;
+  border-color: #b8ff34;
+}
+.navbar-toggler[aria-expanded=true] {
+  background-color: transparent;
+  border-color: #b8ff34;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(184,255,52,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler:active .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,0,0,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler[aria-expanded=true] .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(184,255,52,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Main global */
+main {
+  padding: 2rem 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 68.75rem;
+  margin: 0 auto;
+}
+
+.page-intro {
+  margin-bottom: 2rem;
+}
+.page-intro h1 {
+  color: #b8ff34;
+  font-family: "Bodoni Moda", serif;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+/* Servicios */
+.servicios {
+  padding: 2rem 0;
+}
+.servicios h2 {
+  margin-bottom: 1.5rem;
+}
+
+/* Ajustes Bootstrap Accordion */
+.accordion-item {
+  background-color: inherit;
+  border: none;
+  border-radius: 0;
+}
+
+.accordion-button {
+  background-color: inherit;
+  color: #b8ff34;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-collapse {
+  border-radius: 0 !important;
+}
+
+/* Icono personalizado de accordion */
+.accordion-button::after {
+  background-image: none !important;
+  content: "+";
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #b8ff34;
+}
+
+.accordion-button:not(.collapsed)::after {
+  content: "−";
+  color: #000;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #b8ff34;
+  color: #000;
+}
+
+.accordion-collapse.show .accordion-body {
+  background-color: #000;
+  color: #b8ff34;
+}
+
+.accordion-body {
+  color: #b8ff34;
+}
+
+/* CTA */
+.CTA {
+  background-color: #b8ff34;
+  padding: 2rem 0;
+  text-align: center;
+  font-weight: 700;
+}
+.CTA h2 {
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.btn-cta {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s ease;
+}
+.btn-cta:hover {
+  background-color: #333;
+}
+
+/* Footer */
+footer {
+  padding: 1.5rem 0;
+}
+footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+footer img {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -13,25 +13,24 @@
 
   <!-- Fuente -->
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
   </style>
 
   <title>Inicio</title>
 </head>
 
 <body>
-
-
-  <!--Inicio header  -->
+  <!-- Inicio header -->
   <header>
-    <nav class="navbar navbar-expand-lg w-100">
+    <nav class="navbar navbar-expand-lg w-100" aria-label="Navegación principal">
       <div class="container">
-
         <a class="navbar-brand" href="index.html">
           <img src="img/logo.png" alt="Logo">
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="menu" aria-expanded="false" aria-label="Abrir menú de navegación">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -42,199 +41,174 @@
             <li class="nav-item"><a class="nav-link" href="pages/proyectos.html">Proyectos</a></li>
           </ul>
         </div>
-
       </div>
     </nav>
   </header>
-
-  <!--FIN header  -->
-
+  <!-- FIN header -->
 
   <!-- Inicio main -->
   <main class="container">
-
     <!-- Mensaje Bienvenida -->
     <section class="bienvenida">
       <h1>Hola, soy Baldo</h1>
-      <p>Bienvenido a mi portafolio, aquí encontrarás algunos de mis trabajos.</p>
+      <p>Bienvenido a mi portafolio. Este es el lugar donde las ideas, la creatividad y los proyectos toman forma.</p>
     </section>
 
     <!-- Proyectos -->
-    <section class="proyectos">
-      <h3>Proyectos</h3>
+    <section class="proyectos" aria-labelledby="proyectos-home">
+      <h2 id="proyectos-home">Proyectos</h2>
 
       <div class="proyectos-grid">
-
         <article class="proyecto-card proyecto-01">
-          <img src="img/example.png" alt="proyecto-01">
+          <img src="img/portadas-proyectos/01.jpg" alt="PacifiCard - San Valentín">
           <div class="contenido">
-            <h4><a href="#">Proyecto 01</a></h4>
-            <p>Descripción 01</p>
+            <h3><a href="#">PacifiCard - San Valentín</a></h3>
+            <p>En San Valentín, la idea fue ir más allá de los regalos típicos y destacar que el amor verdadero se basa en la confianza, proponiendo una prueba sincera para demostrar el lado más romántico de los enamorados.</p>
           </div>
         </article>
 
         <article class="proyecto-card proyecto-02">
-          <img src="img/example.png" alt="proyecto-02">
+          <img src="img/portadas-proyectos/02.jpg" alt="Banco Guayaquil - Círculos">
           <div class="contenido">
-            <h4><a href="#">Proyecto 02</a></h4>
-            <p>Descripción 02</p>
+            <h3><a href="#">BG - Círculos</a></h3>
+            <p>Círculos permite cobrar, pagar y dividir gastos grupales desde la app usando solo el celular.</p>
           </div>
         </article>
 
         <article class="proyecto-card proyecto-03">
-          <img src="img/example.png" alt="proyecto-03">
+          <img src="img/portadas-proyectos/03.jpg" alt="San Carlos - Dulzura Para Todo Lo Bueno">
           <div class="contenido">
-            <h4><a href="#">Proyecto 03</a></h4>
-            <p>Descripción 03</p>
+            <h3><a href="#">San Carlos - Dulzura Para Todo Lo Bueno</a></h3>
+            <p>Dulzura para todo lo bueno convirtió a San Carlos en el toque que acompaña y realza los momentos especiales del día a día.</p>
           </div>
         </article>
 
         <article class="proyecto-card proyecto-04">
-          <img src="img/example.png" alt="proyecto-04">
+          <img src="img/portadas-proyectos/04.jpg" alt="Teatro Sánchez Aguilar - Nueva aplicación">
           <div class="contenido">
-            <h4><a href="#">Proyecto 04</a></h4>
-            <p>Descripción 04</p>
+            <h3><a href="#">TSA - Nueva aplicación</a></h3>
+            <p>La nueva App de Teatro Sánchez Aguilar acercó su programación al público, haciendo más fácil descubrir eventos, comprar entradas y vivir la cultura desde el celular.</p>
           </div>
         </article>
 
         <article class="proyecto-card proyecto-05">
-          <img src="img/example.png" alt="proyecto-05">
+          <img src="img/portadas-proyectos/05.jpg" alt="Whomatch - Branding">
           <div class="contenido">
-            <h4><a href="#">Proyecto 05</a></h4>
-            <p>Descripción 05</p>
+            <h3><a href="#">Whomatch - Branding</a></h3>
+            <p>Whomatch conecta causas y perfiles políticos con los intereses de votantes jóvenes.</p>
           </div>
         </article>
 
         <article class="proyecto-card proyecto-06">
-          <img src="img/example.png" alt="proyecto-06">
+          <img src="img/portadas-proyectos/06.jpg" alt="Pet Club - El Último Día">
           <div class="contenido">
-            <h4><a href="#">Proyecto 06</a></h4>
-            <p>Descripción 06</p>
+            <h3><a href="#">Pet Club - El Último Día</a></h3>
+            <p>El Último Día buscó concientizar sobre el impacto de la pirotecnia en los animales de compañía, invitando a celebrar el 31 de diciembre con más empatía y responsabilidad.</p>
           </div>
         </article>
 
         <article class="proyecto-card proyecto-07">
-          <img src="img/example.png" alt="proyecto-07">
+          <img src="img/portadas-proyectos/07.jpg" alt="Samsung - Galaxy Z Fold5 | Z Flip 5">
           <div class="contenido">
-            <h4><a href="#">Proyecto 07</a></h4>
-            <p>Descripción 07</p>
+            <h3><a href="#">Samsung - Galaxy Z Fold5 | Z Flip 5</a></h3>
+            <p>El lanzamiento del Galaxy Z Fold5 y Z Flip5 en Ecuador presentó una nueva forma de vivir la innovación móvil con diseño plegable, estilo y alto rendimiento.</p>
           </div>
         </article>
 
         <article class="proyecto-card proyecto-08">
-          <img src="img/example.png" alt="proyecto-08>
+          <img src="img/portadas-proyectos/08.jpg" alt="Banco Bolivariano - Match con Balance">
           <div class="contenido">
-            <h4><a href="#">Proyecto 08</a></h4>
-            <p>Descripción 08</p>
+            <h3><a href="#">Banco Bolivariano - Match con Balance</a></h3>
+            <p>Match con Balance abordó la compatibilidad financiera en pareja con la estética de una app de citas, para hablar de dinero de forma cercana, útil y entretenida.</p>
           </div>
         </article>
-
       </div>
     </section>
-
-
   </main>
-
   <!-- FIN main -->
 
-
   <!-- Inicio Servicios -->
+  <section class="servicios" aria-labelledby="servicios-home">
+    <div class="container">
+      <h2 id="servicios-home">Servicios</h2>
 
-  <div>
-
-    <section class="servicios">
-      <div class="container">
-        <h3>Servicios</h3>
-
-        <div class="accordion" id="serviciosAccordion">
-
-          <!-- Servicio 01 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#serv1">
-                Servicio 01
-              </button>
-            </h2>
-            <div id="serv1" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
-              <div class="accordion-body">
-                Descripción del Servicio 01.
-              </div>
+      <div class="accordion" id="serviciosAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serv1"
+              aria-expanded="false" aria-controls="serv1">
+              Branding y Diseño de Marca
+            </button>
+          </h3>
+          <div id="serv1" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
+            <div class="accordion-body">
+              Creo marcas con personalidad, intención y una identidad visual que conecta desde el primer vistazo.
             </div>
           </div>
+        </div>
 
-          <!-- Servicio 02 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#serv2">
-                Servicio 02
-              </button>
-            </h2>
-            <div id="serv2" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
-              <div class="accordion-body">
-                Descripción del Servicio 02.
-              </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serv2"
+              aria-expanded="false" aria-controls="serv2">
+              Copywriting y Contenido Creativo
+            </button>
+          </h3>
+          <div id="serv2" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
+            <div class="accordion-body">
+              Transformo ideas en palabras que atraen, conectan y hacen que cada mensaje tenga impacto.
             </div>
           </div>
+        </div>
 
-          <!-- Servicio 03 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#serv3">
-                Servicio 03
-              </button>
-            </h2>
-            <div id="serv3" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
-              <div class="accordion-body">
-                Descripción del Servicio 03.
-              </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serv3"
+              aria-expanded="false" aria-controls="serv3">
+              UI/UX Design
+            </button>
+          </h3>
+          <div id="serv3" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
+            <div class="accordion-body">
+              Diseño experiencias digitales intuitivas, atractivas y pensadas para que cada interacción fluya naturalmente.
             </div>
           </div>
+        </div>
 
-          <!-- Servicio 04 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#serv4">
-                Servicio 04
-              </button>
-            </h2>
-            <div id="serv4" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
-              <div class="accordion-body">
-                Descripción del Servicio 04.
-              </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serv4"
+              aria-expanded="false" aria-controls="serv4">
+              Full Stack Development
+            </button>
+          </h3>
+          <div id="serv4" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
+            <div class="accordion-body">
+              Construyo soluciones web completas, uniendo diseño, funcionalidad y tecnología en una sola experiencia.
             </div>
           </div>
-
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+  <!-- FIN Servicios -->
 
-    <!-- FIN Servicios -->
+  <!-- Inicio Clientes -->
+  <section class="clientes" aria-labelledby="clientes-home">
+    <div class="container">
+      <h2 id="clientes-home">Clientes</h2>
 
-
-    <!-- Inicio Clientes -->
-    <section class="clientes">
-      <div class="container">
-        <h3>Clientes</h3>
-
-        <div class="logos">
-          <img src="img/Adidas-Logo.png" alt="logo-cliente">
-          <img src="img/Adidas-Logo.png" alt="logo-cliente">
-          <img src="img/Adidas-Logo.png" alt="logo-cliente">
-          <img src="img/Adidas-Logo.png" alt="logo-cliente">
-          <img src="img/Adidas-Logo.png" alt="logo-cliente">
-          <img src="img/Adidas-Logo.png" alt="logo-cliente">
-        </div>
+      <div class="logos">
+        <img src="img/marcas-clientes/logo-01.png" alt="Samsung">
+        <img src="img/marcas-clientes/logo-02.png" alt="Banco Guayaquil">
+        <img src="img/marcas-clientes/logo-03.png" alt="Banco Bolivariano">
+        <img src="img/marcas-clientes/logo-04.png" alt="Teatro Sánchez Aguilar">
+        <img src="img/marcas-clientes/logo-05.png" alt="Pacificard">
+        <img src="img/marcas-clientes/logo-06.png" alt="BDP">
       </div>
-    </section>
-
-  </div>
-
+    </div>
+  </section>
   <!-- Fin Clientes -->
-
 
   <!-- CTA -->
   <section class="CTA">
@@ -247,17 +221,14 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <a href="#"><img src="img/footer/behance.png" alt="Behance"></a>
-      <a href="#"><img src="img/footer/instagram.png" alt="Instagram"></a>
-      <a href="#"><img src="img/footer/github.png" alt="Github"></a>
-      <a href="#"><img src="img/footer/dribble.png" alt="Dribble"></a>
+      <a href="https://www.behance.net/baldo" target="_blank" rel="noopener noreferrer"><img src="img/footer/behance.png" alt="Behance"></a>
+      <a href="https://www.instagram.com/baldo.design" target="_blank" rel="noopener noreferrer"><img src="img/footer/instagram.png" alt="Instagram"></a>
+      <a href="https://github.com/baldo" target="_blank" rel="noopener noreferrer"><img src="img/footer/github.png" alt="Github"></a>
     </div>
   </footer>
 
-
-  <!-- script boostrap -->
+  <!-- script bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 
 </html>

@@ -1,0 +1,67 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+.about-content {
+  @include card-styles;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-img img {
+  max-width: 350px;
+  border-radius: 0.5rem;
+}
+
+.about-text {
+  text-align: center;
+
+  h1 {
+    color: $c-secondary;
+    @include secondary-font;
+  }
+}
+
+.about-experience {
+  margin-top: 4rem;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+
+  li + li {
+    margin-top: 2rem;
+  }
+}
+
+.exp-years {
+  display: block;
+  margin: 0.5rem auto 0;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid $c-secondary;
+  border-radius: 999px;
+  width: fit-content;
+  font-size: 0.85rem;
+  font-weight: $fw-bold;
+  color: $c-secondary;
+}
+
+.btn-cv {
+  margin-top: 2rem;
+  background-color: transparent;
+  color: $c-secondary !important;
+  border: 1px solid $c-secondary;
+  font-weight: $fw-bold;
+
+  &:hover {
+    background-color: $c-secondary !important;
+    color: $c-primary !important;
+  }
+}
